@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAJA SHOP</title>
+    
+    <link rel="shortcut icon"  type="image/x-icon" href="{% static 'imagenes/icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">SAJA SHOP</h2>
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Conocenos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Productos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Servicios</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Login</a>
+                </li>
+
+                <img src="{% static 'imagenes/close.svg' %}" alt="close" class="nav_close">
+            </ul>
+
+            <div class="nav_menu">
+                <img src="{% static 'imagenes/menu.svg' %}" alt="menu" class="nav_img">
+            </div>
+        </nav>
+
+        <section class="hero_container container">
+            <h1 class="hero_title">SAJA SHOP</h1>
+            <p class="hero_paragraph">Elige la mejor relación calidad-precio, somo distribuidores de productos tecnologicos a nivel nacional</p>
+            <a href="#" class="cta">Comprar</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Que podrás encontrar en nuestra tienda?</h2>
+            <p class="about_paragraph">La mejor tecnología de punta en nuestros productos como lo son: computadores, tablets. telefonos, portatiles, etc...</p>
+            <div class="about_main">
+
+                <article class="about_icons">
+                    <img src="{% static 'imagenes/money.svg' %}" class="about_icon">
+                    <h3 class="about_title">Metodos de Pago</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque rem ab neque veniam exercitationem voluptatum debitis, excepturi accusantium qui, officiis corporis magni ratione deleniti. Adipisci enim suscipit aspernatur magni fuga?</p>
+                </article>
+
+                <article class="about_icons">
+                    <img src="{% static 'imagenes/camion.svg' %}" class="about_icon">
+                    <h3 class="about_title">Envíos</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque rem ab neque veniam exercitationem voluptatum debitis, excepturi accusantium qui, officiis corporis magni ratione deleniti. Adipisci enim suscipit aspernatur magni fuga?</p>
+                </article>
+
+                <article class="about_icons">
+                    <img src="{% static 'imagenes/help.svg' %}" class="about_icon">
+                    <h3 class="about_title">Servicio al Cliente</h3>
+                    <p class="about_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque rem ab neque veniam exercitationem voluptatum debitis, excepturi accusantium qui, officiis corporis magni ratione deleniti. Adipisci enim suscipit aspernatur magni fuga?</p>
+                </article>  
+            </div>
+        </section>
+        <section class="knowledge">
+                    
+                <div class="knowledge_container container" >
+                    <div class="knowledge_texts">
+                        <h2 class="subtitle">Tienda tecnologíca "Actualiza, conecta y disfruta".</h2>
+                        <p class="knowledge_paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex culpa ratione, animi quod doloremque blanditiis ad at voluptatem alias. Doloremque ex quo reiciendis voluptates incidunt sequi laboriosam assumenda harum nihil.</p>
+                        <a href="#" class="cta_know">Empieza a comprar</a>
+                    </div>
+
+                    <figure class="knowledge_picture">
+                        <img src="{% static 'imagenes/store.jpg' %}" class="knowledge_img">
+                    </figure>
+                </div>
+        </section>
+        <section class="price container">
+                <h2 class="subtitle">Obten grandes descuentos</h2>
+                <div class="price_table">
+                    <div class="price_element">
+                        <h2 class="plan_name">Descuento de Bienvenida</h2>
+                        <h3 class="plan_price">10%</h3>
+
+                        <div class="plan_items">
+                            <p class="plan_features">Portatiles</p>
+                            <p class="plan_features">Torres</p>
+                            <p class="plan_features">Celulares</p>
+                        </div>
+                        <a href="#" class="plan_cta">Compra Ahora</a>
+                    </div>
+
+                    <div class="price_element price_element--best">
+                        <h2 class="plan_name">Descuento en compra de combo PC</h2>
+                        <h3 class="plan_price">20%</h3>
+
+                        <div class="plan_items">
+                            <p class="plan_features">Mother board</p>
+                            <p class="plan_features">Procesador</p>
+                            <p class="plan_features">Tarjeta grafica</p>
+                        </div>
+                        <a href="#" class="plan_cta">Compra Ahora</a>
+                    </div>
+
+                    <div class="price_element">
+                        <h2 class="plan_name">Descuento mayorista</h2>
+                        <h3 class="plan_price">30%</h3>
+
+                        <div class="plan_items">
+                            <p class="plan_features">Cantidad en Stock</p>
+                            <p class="plan_features">Variedad de productos</p>
+                            <p class="plan_features">Multiples referencias</p>
+                        </div>
+                        <a href="#" class="plan_cta">Compra Ahora</a>
+                    </div>
+                    
+                </div>
+        </section>
+        <section class="testimony">
+            <div class="testimony_container container">
+                <img src="{% static 'imagenes/leftarrow.svg' %}" class="testimony_arrow" id="before">
+                <section class="testimony_body testimony_body--show" data-id="1">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Mi nombre es Alejandra Avalos, <span class="testimony_store">Estudiante de telecomunicaciones</span></h2>
+                        <p class="testimony_review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cupiditate laboriosam alias voluptas corrupti repellat, nam incidunt quod harum veritatis ad! Voluptas impedit eos ut tenetur hic excepturi, eveniet eius!</p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="{% static 'imagenes/face1.jpg' %}" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony_body " data-id="2">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Mi nombre es Jorda Alexander, <span class="testimony_store">Estudiante de telecomunicaciones</span></h2>
+                        <p class="testimony_review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cupiditate laboriosam alias voluptas corrupti repellat, nam incidunt quod harum veritatis ad! Voluptas impedit eos ut tenetur hic excepturi, eveniet eius!</p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="{% static 'imagenes/face2.jpg' %}" class="testimony_img">
+                    </figure>
+                </section>
+
+                <section class="testimony_body " data-id="3">
+                    <div class="testimony_text">
+                        <h2 class="subtitle">Mi nombre es Harold Gomez, <span class="testimony_store">Estudiante de telecomunicaciones</span></h2>
+                        <p class="testimony_review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi cupiditate laboriosam alias voluptas corrupti repellat, nam incidunt quod harum veritatis ad! Voluptas impedit eos ut tenetur hic excepturi, eveniet eius!</p>
+                    </div>
+
+                    <figure class="testimony_picture">
+                        <img src="{% static 'imagenes/face3.jpg' %}" class="testimony_img">
+                    </figure>
+                </section>
+
+
+                <img src="{% static 'imagenes/rigtharrow.svg' %}" class="testimony_arrow" id="next">
+            </div>
+        </section>
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <p class="questions_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magni illo, cumque natus perferendis totam.</p>
+        
+            <section class="questions_container">
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿Obtengo algun beneficio por ser cliente frecuente?
+                            <span class="questions_arrow">
+                                <img src="{% static 'imagenes/arrow.svg'%}" class="testimony_img">
+                            </span>
+                        </h3>
+
+                        <p class="questions_show">Para el día de tu cumpleaños puedes adquirir el producto que quieras con un cupón de descuento del 30%, para lo cual debes enviarnos la foto de tu cédula de ciudadanía a nuestro correo electrónico info@tiendasaja.com para hacer efectivo tu descuento.</p>
+                    </div>      
+                </article>
+
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿cual es el tiempo de envío de un producto?
+                            <span class="questions_arrow">
+                                <img src="{% static 'imagenes/arrow.svg'%}" class="testimony_img">
+                            </span>
+                        </h3>
+
+                        <p class="questions_show">Los tiempo de envío es de 2 a 6 días hábiles, tiempo que depende del lugar al cual se haga el envío sin tener en cuente casos imprevistos como huelgas y cierres de vías.</p>
+                    </div>      
+                </article>
+
+                <article class="questions_padding">
+                    <div class="questions_answer">
+                        <h3 class="questions_title">¿Que pasa si mi producto llego dañado?
+                            <span class="questions_arrow">
+                                <img src="{% static 'imagenes/arrow.svg'%}" class="testimony_img">
+                            </span>
+                        </h3>
+
+                        <p class="questions_show">Si al momento de recibir tu pedido identificas que ha llegado dañado o golpeado debes avisarnos inmediatamente a nuestro correo electrónico info@tiendasaja.com y adjuntar fotos para tomar las medidas de inmediato e identificar si es ocasionado por mal manejo en el transporte o si son daños de fábrica. En ambos casos se hará el cambio del producto para lo cual el cliente debe hacer la devolución a nuestra oficina de atención en Cali del producto (sin claves u contraseñas, ni daños causados por el cliente) con todos sus accesorios y empaques interiores y exteriores dentro de los 5 días hábiles siguientes a la entrega.</p>
+                    </div>      
+                </article>
+            </section>
+        </section>
+        <section class="questions_offer">
+            <h2 class="subtitle">¿Estas listo para empezar a comprar?</h2>
+            <p class="questions_copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+                architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit
+                eius atque tempora iure ab non autem.</p>
+            <a href="#" class="cta_but ">Empieza ahora</a>
+        </section>
+    </main>
+
+<footer class="footer">
+    <section class="footer_container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer_title">SAJA SHOP.</h2>
+
+            <ul class="nav_link nav_link--footer">
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Conocenos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Productos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Servicios</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#" class="nav_links">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="footer_form" action="https://formspree.io/f/mknkkrkj" method="POST">
+            <h2 class="footer_newsletter">Suscribete a la newsletter</h2>
+            <div class="footer_inputs">
+                <input type="email" placeholder="Email:" class="footer_input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer_submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer_copy container">
+        <div class="footer_social">
+            <a href="#" class="footer_icons"><img src="{% static 'imagenes/facebook.svg' %}" class="footer_img"></a>
+            <a href="#" class="footer_icons"><img src="{% static 'imagenes/twitter.svg' %}" class="footer_img"></a>
+            <a href="#" class="footer_icons"><img src="{% static 'imagenes/insta.svg' %}" class="footer_img"></a>
+        </div>
+
+        <h3 class="footer_copyright">Derechos reservados &copy; Athenea-coder</h3>
+    </section>
+</footer>
+        
+
+    <script src="{% static 'js/slider.js' %}"></script>
+    <script src="{% static 'js/questions.js' %}"></script>
+    <script src="{% static 'js/menu.js' %}"></script>
+</body>
+</html>
