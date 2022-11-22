@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conocenos</title>
+    <link rel="stylesheet" href="{% static 'nosotros/nosotros.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="{% static 'nosotros/fotos/menuleft.svg' %}" alt="" class="hamburguer">
+        <nav class="menu-navegacion">
+            
+            <a href="{% url 'index'%}">Inicio</a>
+            <a href="#Conocenos">Conocenos</a>
+            <a href="{% url 'productos'%}">Productos</a>
+            <a href="{% url 'servicios'%}">Servicios</a>
+            <a href="{% url 'login'%}">Login</a>          
+        </nav>
+
+        <div class="contenedor head">
+            <h1 class="titulo">Nosotros</h1>
+            <p class="copy">¡Somo un equipo completaente capacitado para brindarte el mejor servicio!</p>
+        </div>
+    </header>
+    <main>
+        <!-- importante {% static 'ruta' %} -->
+        <section class="services contenedor" id="servicio" >
+            <h2 class="subtitle">Nuestro Equipo</h2>
+            <div class="contenedor-servicio">
+                <img src="{% static 'nosotros/fotos/team.jpg' %}" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span> Equipo de marketing</h3>
+                        <p>Trabajando cada dia para mejorar por ti</p>
+                    </div>
+
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span> Equipo de logistica</h3>
+                        <p>Productos increibles a la distancia de un click</p>
+                    </div>
+
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span> Equipo de servicio al cliente</h3>
+                        <p>¡Conocenos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="portafolio">
+            <div class="contenedor">
+                <h2 class="subtitle">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="{% static 'nosotros/fotos/portatil.jpg'%}" alt="" class="img-galeria">
+                    <img src="{% static 'nosotros/fotos/cell.jpg'%}" alt="" class="img-galeria">
+                    <img src="{% static 'nosotros/fotos/torre.jpg'%}" alt="" class="img-galeria">
+                    <img src="{% static 'nosotros/fotos/airpods.jpg'%}" alt="" class="img-galeria">
+                    <img src="{% static 'nosotros/fotos/pantalla.jpg'%}" alt="" class="img-galeria">
+                    <img src="{% static 'nosotros/fotos/cpu.jpg'%}" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="{% static 'nosotros/fotos/close.svg' %}" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        <section class="contenedor" id="expertos">
+            <h2 class="subtitle">Distribuidores expertos en:</h2>
+            <section class="experts">
+                <div class="cont-expert">
+                    <img src="{% static 'nosotros/fotos/pcgaming.jpg' %}" alt="">
+                    <h3 class="n-expert">Setups</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="{% static 'nosotros/fotos/tecno.jpg' %}" alt="">
+                    <h3 class="n-expert">Computadores</h3>
+                </div>
+                <div class="cont-expert">
+                    <img src="{% static 'nosotros/fotos/celu.jpg' %}" alt="">
+                    <h3 class="n-expert">Celulares</h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">SAJA SHOP</h2>
+                    <p>Somos expertos en la creación de tus sueños</p>
+                </div>
+                <div class="social-media">
+                    <a href="#" class="footer_icons"><img src="{% static 'nosotros/fotos/facebook.svg' %}" class="social-media-icon"></a>
+                    <a href="#" class="footer_icons"><img src="{% static 'nosotros/fotos/twitter.svg' %}" class="social-media-icon"></a>
+                    <a href="#" class="footer_icons"><img src="{% static 'nosotros/fotos/insta.svg' %}" class="social-media-icon"></a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="{% static 'nosotros/menu.js' %}"></script>
+    <script src="{% static 'nosotros/lightbox.js' %}"></script>
+
+</body>
+</html>
