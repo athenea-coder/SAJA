@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="{% static 'productos/productos.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="{% url 'index'%}" class="logo">Inicio</a>
+            <a href="{% url 'contactUs'%}" class="logo">Conocenos</a>
+            <a href="#productos" class="logo">Productos</a>
+            <a href="{% url 'servicios'%}" class="logo">Servicios</a>
+            <a href="{% url 'login'%}" class="logo">Login</a>
+            <!--Icon-->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Tú carrito</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        
+                    </div>
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$</div>
+                </div>
+                <!--buy buttom-->
+                <button type="button" class="btn-buy">Compra Ahora</button>
+                <!--cart close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        <h2 class="section-title">Productos</h2>
+        <!--content-->
+        <div class="shop-content">
+            <!--box 1-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/asus1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Portátil ASUS AMD Ryzen3 8GB 512GB SSD</h2>
+                <span class="price">$ 1.275.560</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 2-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/acer1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Portatil ACER Aspire3 Intel Corei3 8GB 256GB SSD</h2>
+                <span class="price">$ 1.409.530</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 3-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/lenovo1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">LENOVO Intel Corei3 8GB 1TB HDD + 256GB SSD IP3</h2>
+                <span class="price">$ 1.687.950</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 4-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/acer2.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">ACER N19C1 Intel Corei5 4GB 256GB SSD</h2>
+                <span class="price">$ 2.999.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 5-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/hp1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Portatil HP PAVILION I5 8GB 256SSD Intel Corei5  8GB 256GB SSD</h2>
+                <span class="price">$ 1.818.405</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 6-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/hp2.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Portatil HP PAVILION Intel Corei7 8GB 512GB SSD</h2>
+                <span class="price">$ 6.199.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 7-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/motog1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Celular MOTOROLA Moto G60 128GB Plata</h2>
+                <span class="price">$ 1.699.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 8-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/redmi1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Celular XIAOMI Redmi Note 10 5G 128GB Gris</h2>
+                <span class="price">$ 1.099.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 9-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/poco1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Celular poco Poco M3 Pro 5G 128GB Negro</h2>
+                <span class="price">$ 1.099.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 10-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/tecno1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Celular TECNO MOBILE POVA 4 128GB Grey</h2>
+                <span class="price">$ 1.299.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 11-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/samsung1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Celular SAMSUNG Galaxy A52 128GB Azul</h2>
+                <span class="price">$ 1.899.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 12-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/pc1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">PC Gamer Xtreme Gaming PC, Intel Corei5, NVIDIA GeForce GTX 1660 6GB, 8GB DDR4, 240GB SSD, 1TB HDD, Win 10 Home</h2>
+                <span class="price">$ 6.136.261</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 13-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/pantalla1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Monitor LED curvado 30' 21:9 2560 x 1080p HDMI DisplayPort 85 Hz altavoces integrados, azul</h2>
+                <span class="price">$1.247.208</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 14-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/torre1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Skytech Chronos- Intel Corei5 3.7 GHz, RTX 3070, SSD 1 TB, DDR4 3200 16G, fuente de alimentación 650 W, Windows 10 Home de 64 bits</h2>
+                <span class="price">$ 7.982.128</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 15-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/air1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Donner inalámbricos con cancelación de ruido, Bluetooth 5.2 con 4 micrófonos transparentes, tiempo de reproducción de 32 horas, carga rápida, negro</h2>
+                <span class="price">$ 250.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 16-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/air2.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">RHA Trueconnect - Negro de carbono: Auriculares inalámbricos con Bluetooth 5 y a prueba de sudor para actividad deportiva</h2>
+                <span class="price">$ 240.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 17-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/torre2.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">MXZ Torre, 12ª generación I5 12400F 4.4GHz, GTX 1660S, 16GB DDR4 3200, NVME 500GB SSD, 6RGB, Win 10 Pro Ready</h2>
+                <span class="price">$ 3.999.900</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 18-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/combo1.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Havit Combo de teclado y mouse RGB de 104 teclas, interruptores azules, teclados USB con cable con reposamuñecas desmontable, mouse programable para PC (negro)</h2>
+                <span class="price">$ 225.500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 19-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/combo2.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">Teclado, mouse para juegos, auriculares y alfombrilla de mouse, paquete de retroiluminación LED RGB con cable, edición blanca 4 en 1, Hornet RX-250</h2>
+                <span class="price">$ 350.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!--box 20-->
+            <div class="product-box">
+                <img src="{% static 'productos/imag/aud.jpg' %}" alt="" class="product-img">
+                <h2 class="product-title">ZIUMIER Z30 - Auriculares para juegos para PS4, Xbox One, PC</h2>
+                <span class="price">$ 180.000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'productos/productos.js' %}"></script>
+</body>
+</html>
