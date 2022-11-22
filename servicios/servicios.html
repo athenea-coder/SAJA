@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'servicios/servicios.css' %}">
+</head>
+<body>
+    
+    <header>
+
+        <div class="container__header">	
+
+            <div class="logo">
+                <img src="{% static 'servicios/ima/cart.png' %}" alt="">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'index'%}">Inicio</a></li>
+                        <li><a href="{% url 'contactUs'%}">Conocenos</a></li>
+                        <li><a href="{% url 'productos'%}">Productos</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="{% url 'login'%}">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            <div class="header__register">
+                <input type="button" class="btn__header-register" value="Comunicarse">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="cover">
+            
+            <div class="text__information-cover">
+                <h1>Contamos con excelente servicio al cliente</h1>
+
+                <p>Nuestro servicio al cliente esta abierto siempre a responder cualquier inquietud, queja, reclamo o sugerencia. Disponible para dar solución y soporte.</p>
+
+                <div class="buttons__cover">
+                    <input type="button" class="btn__register-cover" value="Registrarse">
+                    <input type="button" class="btn__readMore-cover" value="Comunicarse">
+                </div>
+
+            </div>
+
+            <div class="media__cover">
+                <video src="{% static 'servicios/ima/media_animacion_cover.webm' %}" autoplay playinline loop muted preload="auto"></video>
+            </div>
+
+
+        </div>
+
+        <div class="container__banner">
+
+            <div class="banner">
+                <div class="banner__icon-heart">
+                    <img src="{% static 'servicios/ima/heart_notify.png' %}" id="icon_heart" alt="">
+                </div>
+                <div class="banner__icon-fire">
+                    <img src="{% static 'servicios/ima/fire-dynamic-color.png' %}" id="icon_fire" alt="">
+                </div>
+                <div class="banner__text">
+                    <h2>Siempre dispuestos a apoyarte.</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="{% static 'servicios/servicios.js' %}"></script>
+</body>
+</html>
