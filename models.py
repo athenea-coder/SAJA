@@ -3,49 +3,42 @@ from mailbox import NoSuchMailboxError
 from django.db import models
 
 # Create your models here.
-class cliente(models.Model):
+class Cliente(models.Model):
     nombreCliente = models.CharField(max_length=255 )
     email = models.EmailField()
     telefono = models.IntegerField()
     direccion = models.CharField(max_length=255)
 
-class pagos(models.Model): 
-    nombreCliente = models.CharField(max_length=255 )
-    numTarjeta = models.IntegerField()
-    pagoTotal = models.DecimalField(max_digits = 100, decimal_places = 2)
-
-class compra(models.Model):
-    nombreCliente = models.CharField(max_length=255 )  
-    idProducto = models.IntegerField()
-    fecha = models.DateField()
-    pagoTotal = models.DecimalField(max_digits = 100, decimal_places = 2)    
-
-class producto(models.Model):
+class Producto(models.Model):
     nombre = models.CharField(max_length=255 )
-    cantidadStock = models.IntegerField()
+    Stock = models.IntegerField()
     precio = models.DecimalField(max_digits = 100, decimal_places = 2)
     imagen = models.ImageField()
-    descripcion = models.CharField(max_length=500 )  
+    descripcion = models.CharField(max_length=500 )      
 
-class factura(models.Model):
-    idCompra = models.IntegerField()   
-    nombreCliente = models.CharField(max_length=255 ) 
-    idCliente = models.IntegerField()  
-    telefono = models.IntegerField()
-    direccion = models.CharField(max_length=255)
-    idProducto = models.IntegerField()
-    pagoTotal = models.DecimalField(max_digits = 100, decimal_places = 2) 
-
-class facturaDescuento(models.Model):
-    idCompra = models.IntegerField()   
-    idProducto = models.IntegerField()
-    cantidad = models.IntegerField()
-    pagoTotal = models.DecimalField(max_digits = 100, decimal_places = 2) 
-    descuento =  models.DecimalField(max_digits = 100, decimal_places = 2) 
-
-class envios(models.Model):
+class Envios(models.Model):
     nombreCliente = models.CharField(max_length=255 )      
     telefono = models.IntegerField()
     direccion = models.CharField(max_length=255)
     fechaEnvio = models.DateField()
-    compañia = models.CharField(max_length=255 )           
+    fecha_Llegada = models.DateField()
+    empresa = models.CharField(max_length=255 ) 
+
+class Compra(models.Model):
+    fecha_Compra = models.DateField()
+    Precio_Total = models.DecimalField(max_digits = 100, decimal_places = 2)    
+    id_cliente = models.ForeignKey(Cliente,on_delete=models.CASCADE)
+    id_producto = models.ManyToManyField(Producto)
+    id_envios = models.ManyToManyField(Envios)  
+
+class FacturaDescuento(models.Model):
+    descuento = models.CharField(max_length=3)
+
+class Factura(models.Model):
+    id_Compra = models.ForeignKey(Compra, on_delete=models.CASCADE)      
+
+class Pagos(models.Model): 
+    nombreCliente = models.CharField(max_length=255 )
+    numTarjeta = models.IntegerField()
+    pagoTotal = models.DecimalField(max_digits = 100, decimal_places = 2)
+    id_Compra = models.ForeignKey( Compra ,on_delete=models.CASCADE)            
